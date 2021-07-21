@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(./img/1513937363134941509.jpg)  0 0/cover no-repeat;
+}
+.wrapper{
+    min-height: 100vh;
+}
+h1{
+    color: #fff;
+    font-size: x-small;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: -1;
+}
+.my-form{
+    opacity: 0.6;
+}
+.my-btn{
+    margin-bottom: 6rem;
+}
