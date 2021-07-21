@@ -3,6 +3,7 @@
 }
 body{
     background: url(./img/1513937363134941509.jpg)  0 0/cover no-repeat;
+    min-height: 100vh;
 }
 .wrapper{
     min-height: 100vh;
