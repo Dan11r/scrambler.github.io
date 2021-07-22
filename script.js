@@ -1,7 +1,7 @@
 //что бы зашифровать
 function encrypt(message){
     let toArr = message.split('')
-    let alf = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяабвгдеёжзийклмнопрстуфхцчшщъыьэюя'.split('')
+    let alf = 'зирудежбыъсёпютьщэйфочшцклвгяхмназирудежбыъсёпютьщэйфочшцклвгяхмна'.split('')
     let indexes = []
     let toTrans = ''
     toArr.forEach((e, i)=>{
@@ -22,7 +22,7 @@ function encrypt(message){
 // что бы расшифровать
 function decipher(message){
     let toArr = message.split('')
-    let alf = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюяабвгдеёжзийклмнопрстуфхцчшщъыьэюя'.split('')
+    let alf = 'зирудежбыъсёпютьщэйфочшцклвгяхмназирудежбыъсёпютьщэйфочшцклвгяхмна'.split('')
     let indexes = []
     let toTrans = ''
     toArr.forEach((e, i)=>{
