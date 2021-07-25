@@ -1,5 +1,5 @@
-//что бы зашифровать
-function encrypt(message){
+//что бы зашифровать number = 13, что бы расшифровть number = 20
+function encrypt(message,number){
     let toArr = message.split('')
     let alf = 'зирудежбыъсёпютьщэйфочшцклвгяхмназирудежбыъсёпютьщэйфочшцклвгяхмна'.split('')
     let indexes = []
@@ -7,28 +7,7 @@ function encrypt(message){
     toArr.forEach((e, i)=>{
       alf.some((elem, index)=>{
          if(e === elem || e.toLowerCase() === elem){
-           indexes.push(index+13)
-           return toTrans =toTrans + (e === e.toUpperCase() ? alf[indexes[i]].toUpperCase() : alf[indexes[i]])
-          } 
-          if(e.toLowerCase() === e.toUpperCase()){
-            indexes.push('not letter')
-            return toTrans = toTrans + e
-          }
-       })
-    })
-    return(toTrans)
-  }
-
-// что бы расшифровать
-function decipher(message){
-    let toArr = message.split('')
-    let alf = 'зирудежбыъсёпютьщэйфочшцклвгяхмназирудежбыъсёпютьщэйфочшцклвгяхмна'.split('')
-    let indexes = []
-    let toTrans = ''
-    toArr.forEach((e, i)=>{
-      alf.some((elem, index)=>{
-         if(e === elem || e.toLowerCase() === elem){
-           indexes.push(index+20)
+           indexes.push(index+number)
            return toTrans =toTrans + (e === e.toUpperCase() ? alf[indexes[i]].toUpperCase() : alf[indexes[i]])
           } 
           if(e.toLowerCase() === e.toUpperCase()){
@@ -52,12 +31,12 @@ encryptInput.addEventListener('change', ()=>{
     encryptInputCurrentValue = encryptInput.value 
 })
 encryptBtn.addEventListener('click', ()=>{
-    encryptInput.value = encrypt(encryptInputCurrentValue)
+    encryptInput.value = encrypt(encryptInputCurrentValue, 13)
 })
 
 decipherInput.addEventListener('change', ()=>{
     decipherInputCurrentValue = decipherInput.value 
 })
 decipherBtn.addEventListener('click', ()=>{
-    decipherInput.value = decipher(decipherInputCurrentValue)
+    decipherInput.value = encrypt(decipherInputCurrentValue, 20)
 })
