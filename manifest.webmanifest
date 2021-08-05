@@ -3,7 +3,7 @@
     "background_color": "#f69435",
     "description": "Приложение для шифрование сообщений",
     "display": "fullscreen",
-    "start_url": "https://dan11r.github.io/scrambler.github.io/index.html",
+    "start_url": "https://dan11r.github.io/scrambler.github.io/",
     "name": "scrambler.",
     "short_name": "scrambler.",
     "icons": [
