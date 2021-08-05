@@ -1,7 +1,7 @@
     {
     "theme_color": "#f69435",
     "background_color": "#f69435",
-    "display": "fullscreen",
+    "display": "standalone",
     "start_url": "https://dan11r.github.io/scrambler.github.io/",
     "name": "scrambler.",
     "short_name": "scrambler.",
