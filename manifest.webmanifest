@@ -1,7 +1,6 @@
     {
     "theme_color": "#f69435",
     "background_color": "#f69435",
-    "description": "Приложение для шифрование сообщений",
     "display": "fullscreen",
     "start_url": "https://dan11r.github.io/scrambler.github.io/",
     "name": "scrambler.",
