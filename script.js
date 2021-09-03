@@ -58,8 +58,11 @@ genKeyBtn.addEventListener('click', ()=>{
     generatedKeySpan.style.color = 'white'
     generatedKeySpan.style.backgroundColor = '#198754'
     generatedKeySpan.innerText= `${key}`
+    generatedKeySpan.style.opacity = '1'
     encryptSection.style.display = 'block'
+    encryptSection.style.opacity = '1'
     copyKey.style.display = 'inline-block'
+    copyKey.style.opacity = '1'
     copyKey.style.backgroundColor = '#198754'
 })
 copyKey.addEventListener('click', ()=>{
