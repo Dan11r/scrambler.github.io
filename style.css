@@ -29,3 +29,30 @@ body::after{
 .my-btn{
     margin-bottom: 6rem;
 }
+.keySection{
+    display:flex;
+    flex-direction: column;
+}
+#encryptSection {
+    display: none;
+}
+#generatedKeySpan{
+    overflow: auto;
+    display: inline-block;
+    opacity: 0.8;
+    max-width: 40rem;
+    padding: 1rem;
+    border-radius: 6px;
+    color: red;
+    font-weight: 800
+}
+#copyKey{
+    cursor: pointer;
+    background-color: #198754;
+    display: none;
+    max-width: 10rem;
+    padding: 0.7rem;
+    border-radius: 6px;
+    color: #fff;
+}
+

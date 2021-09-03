@@ -13,18 +13,31 @@
 <body>
     <div class="wrapper">
         <h1>Шифрование сообщений</h1>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control my-form" id="floatingInput" placeholder="Зашифровать">
-                <label for="floatingInput">только русский текст</label>
-            </div>
-            <button id='encrypt' type="button" class="btn btn-success my-btn">Зашифровать</button>
-                
+
             <div class="form-floating mb-3">
                 <input type="email" class="form-control my-form" id="floatingInput1" placeholder="Расшифровать">
-                <label for="floatingInput">только русский текст</label>
+                <label for="floatingInput">Поле для расшифровки текста</label>
+
             </div>
-            <button id='decipher' type="button" class="btn btn-success my-btn">Расшифровать</button> 
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control my-form" id="keyInput" placeholder="Чтобы расшифровать нужен ключ">
+            <label for="keyInput">Чтобы расшифровать нужен ключ</label>
+        </div>
+            <button id='decipher' type="button" class="btn btn-success my-btn">Расшифровать</button>
+        <div class="form-floating keySection mb-3">
+            <p id="generatedKeySpan">Чтобы зашифровать текст нужен ключ</p>
+            <p id="copyKey">Копировать ключ</p>
+        </div>
+        <button id='genKeyBtn' type="button" class="btn btn-success my-btn">сгенерировать ключ</button>
+        <div id='encryptSection'>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control my-form" id="floatingInput" placeholder="Зашифровать">
+                <label for="floatingInput">(Ключ сгенерирован) Введите текст на русском</label>
+            </div>
+            <button id='encrypt' type="button" class="btn btn-success my-btn">Зашифровать</button>
+        </div>
     </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
